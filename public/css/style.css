@@ -1,0 +1,108 @@
+.bg-body-light {
+    background-color: #F5F7FD;
+}
+
+.bg-cyan {
+    background-color: cyan;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+.bg-indigo {
+    background-color: indigo;
+}
+
+.btn-sidebar {
+    margin-left: -12px;
+}
+
+.btn-sidebar:hover {
+    background-color: #00000046;
+}
+
+.sidebar.expandido,
+.sidebar.reduzido,
+.sidebar.reduzido .logo,
+.sidebar.reduzido span {
+    transition: width 0.3s ease;
+}
+
+.reduzido .main-panel,
+.expandido .main-panel {
+    transition: all .3s;
+}
+
+.col-icon {
+    width: 65px;
+    height: 65px;
+}
+
+#multi-filter-select tfoot th:last-child select {
+    display: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.page-link {
+    color: black;
+}
+
+
+.active i,
+.active span {
+    color: black;
+}
+
+.active,
+.active:hover,
+.active>.page-link {
+    border-color: #767676;
+    background-color: #767676;
+    color: black;
+}
+
+@media screen and (max-width: 991px) {
+
+    .users thead tr th:first-child,
+    .users tfoot tr th:first-child,
+    .users tbody tr td:first-child {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .sidebar.reduzido #btn-toggle {
+        margin: auto;
+    }
+
+    .sidebar.expandido {
+        width: 265px;
+    }
+
+    .sidebar.reduzido {
+        width: 75px;
+    }
+
+    .sidebar.reduzido .logo,
+    .sidebar.reduzido span {
+        display: none;
+    }
+
+    .sidebar.reduzido .btn-sidebar {
+        margin-right: -10px;
+    }
+
+    .reduzido .main-panel {
+        width: calc(100% - 265px);
+    }
+
+    .expandido .main-panel {
+        width: calc(100% - 75px);
+    }
+}
